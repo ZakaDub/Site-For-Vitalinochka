@@ -1,0 +1,153 @@
+/* Сброс бургер-кнопки по умолчанию */
+#menu-toggle {
+  display: none;
+}
+
+/* Стили для бургер-иконки */
+.burger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #241d1d;
+}
+
+/* Адаптация для планшетов и телефонов */
+@media screen and (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+  }
+
+  .nav-logo {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  /* Показываем меню, когда бургер активен */
+  #menu-toggle:checked ~ .nav-links {
+    display: block;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links ul li a {
+    padding: 10px 0;
+    display: block;
+  }
+
+  .info-form-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 10px;
+  }
+
+  #o-nas,
+  .order-form {
+    width: 100%;
+    padding: 0;
+  }
+
+  .order-form {
+    padding: 0 10px;
+  }
+
+  .first-sec-img,
+  .first-sec-img-overlay {
+    margin: 16px 10px;
+    max-width: 100%;
+  }
+
+  .first-sec-img-overlay {
+    height: auto;
+    padding: 30px 15px;
+  }
+
+  .overlay-content h2 {
+    font-size: 26px;
+  }
+
+  .overlay-content p {
+    font-size: 14px;
+  }
+
+  .menu-block {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .contact-map {
+    max-width: 100%;
+    margin: 15px auto;
+  }
+}
+
+/* Мини адаптация для телефонов до 425px */
+@media screen and (max-width: 425px) {
+  .nav-links ul li a {
+    padding-left: 10px;
+  }
+
+  .overlay-content h2 {
+    font-size: 22px;
+  }
+
+  .first-sec-btn {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .first-sec-img-overlay {
+    height: 250px; /* или 200px — смотри как лучше по виду */
+    margin: 16px auto;
+    max-width: 90%;
+  }
+
+  .overlay-content h2 {
+    font-size: 20px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .first-sec-btn {
+    font-size: 16px;
+    padding: 8px 14px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .first-sec-img-overlay {
+    height: 180px;
+  }
+
+  .overlay-content h2 {
+    font-size: 18px;
+  }
+
+  .first-sec-btn {
+    font-size: 15px;
+    padding: 7px 12px;
+  }
+}
