@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Чебуречная "Богатырь"</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="adapt.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="side-panel"></div>
+    <div class="main-div">
+      <header>
+
+
+        <div class="nav-bar">
+          <div class="nav-logo">
+            <img src="https://avatars.dzeninfra.ru/get-zen_doc/59919/pub_5d447a88f0d4f400af0a7d08_5d66443b95aa9f00ad3dc347/scale_1200" alt="Логотип" />
+            <h1><a href="#">Богатырь</a></h1>
+          </div>
+
+
+          <input type="checkbox" id="menu-toggle" />
+          <label for="menu-toggle" class="burger">&#9776;</label>
+
+
+          <div class="nav-links">
+            <ul>
+              <li><a href="#o-nas">О нас</a></li>
+              <li><a href="#menu">Меню</a></li>
+              <li><a href="#zakaz">Заказ</a></li>
+              <li><a href="#contact">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="first-sec-order">
+          <div class="first-sec-img-overlay">
+            <div class="overlay-content">
+              <h2>Самые сочные чебуреки в городе!</h2>
+              <button class="first-sec-btn"><a href="#">Сделать заказ</a></button>
+            </div>
+          </div>
+
+          <div class="info-form-wrapper">
+            <div id="o-nas">
+              <h2>О нас</h2>
+              <p>Мы жарим чебуреки по старинным рецептам с любовью и заботой.
+                Наши клиенты довольны уже на протяжении 6 лет
+              </p>
+            </div>
+            <form class="order-form">
+              <label for="first-name">Имя</label>
+              <input type="text" id="first-name" name="first-name" placeholder="Введите имя" />
+
+              <label for="last-name">Фамилия</label>
+              <input type="text" id="last-name" name="last-name" placeholder="Введите фамилию" />
+
+              <label for="order">Ваш заказ</label>
+              <textarea id="order" name="order" placeholder="Введите заказ..."></textarea>
+
+              <button type="submit">Отправить</button>
+            </form>
+          </div>
+        </section>
+
+        <section id="menu">
+          <div class="menu-bar">
+            <h2>Меню</h2>
+            <div class="menu-block">
+              <div class="block block-1">
+                <a href="https://ovkuse.ru/recipes/4151658">
+                  <div class="second-img-container"><img src="https://www.patee.ru/r/x6/01/7d/20/640m.jpg"
+                      alt="Чебурек с мясом"></div>
+                </a>
+                <h2>Чебурек с мясом</h2>
+                <p>150 &#8381;</p>
+              </div>
+              <div class="block block-2">
+                <a href="https://retsepty.online.ua/myasnye-blyuda/vtorye-blyuda/3249/">
+                  <div class="second-img-container"><img
+                      src="https://proxy12.online.ua/retsepty/r2-37900385a2/big5045f0cfa9d08.jpg" alt="Чебурек с сыром">
+                  </div>
+                </a>
+                <h2>Чебурек с сыром</h2>
+                <p>100 &#8381;</p>
+              </div>
+              <div class="block block-3">
+                <a href="https://www.iamcook.ru/showrecipe/36667">
+                  <div class="second-img-container"><img
+                      src="https://img.iamcook.ru/2024/upl/recipes/cat/u-6505a7bac7ff024f30aef389e3c54a21.jpg"
+                      alt="Чебурек с грибами"></div>
+                </a>
+                <h2>Чебурек с грибами</h2>
+                <p>120 &#8381;</p>
+              </div>
+              <div class="block block-4">
+                <a href="https://www.iamcook.ru/showrecipe/17157">
+                  <div class="second-img-container"><img
+                      src="https://img.iamcook.ru/2019/upl/recipes/zen/u-dd13e8e6bb73084923f6fcecce78e951.jpg"
+                      alt="Чебурек с картофелем и сыром"></div>
+                </a>
+                <h2>Чебурек с картофелем<br>и сыром</h2>
+                <p>130 &#8381;</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="contacts">
+            <h2>Контакты</h2> <br>
+            <p>Улица Богатушская, 25</p>
+            <p>+7 967 654-32-10</p>
+            <p>Пн-Сб: 10:00-22:00</p>
+            <p>Вс: 11:00-21:00</p>
+            <div class="contact-map">
+              <img
+                src="https://www.karty.ru/assets/images/ukraina-ng-prevyu.jpg"
+                alt="Мини-карта">
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p id="Vogatin">ⓒ 2025 Вогатынь</p>
+        <p><i class="fa fa-facebook" aria-hidden="true"></i> <i class="fa fa-twitter" style="font-size:24px"></i></p>
+      </footer>
+    </div>
+    <div class="side-panel"></div>
+  </div>
+</body>
+
+</html>
